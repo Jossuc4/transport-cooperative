@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <label for="disdur" class="indication">Veuillez calculer la durée de votre voyage selon votre destination</label>
+        <div id="disdur">
+            <div>
+                <form>
+                    <label for="zoneD">Départ:</label><br>
+                    <select name="zoneD" id="zoneD">
+                        <option value=""></option>
+                        <option value="101">Antananarivo</option>
+                        <option value="601">Antsiranana</option>
+                        <option value="301">Fianarantsoa</option>
+                        <option value="501">Toamasina</option>
+                        <option value="801">Toliara</option>
+                        <option value="401">Mahajanga</option>
+                    </select>
+                </form>
+            </div>
+            <div>
+                <form>
+                    <label for="zoneA">Arrivée :</label><br>
+                    <select name="zoneA" id="zoneA">
+                        <option value=""></option>
+                        <option value="101">Antananarivo</option>
+                        <option value="601">Antsiranana</option>
+                        <option value="301">Fianarantsoa</option>
+                        <option value="501">Toamasina</option>
+                        <option value="801">Toliara</option>
+                        <option value="401">Mahajanga</option>
+                    </select>
+                </form>
+            </div>
+            <div id="resultat">
+                <label for="distance">Distance:</label>
+                <div id="distance"></div><br>
+                <label for="duration">Durée :</label>
+                <div id="duration"></div>
+            </div>
+        </div>
+        <button class="calculer" id="calculer">Calculer</button>
+       <script src="myapp.js"></script>
+    </body>
+</html>
